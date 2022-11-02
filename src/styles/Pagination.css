@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 280px) and (max-width: 1440px) {
+    @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+    .page-numbers {
+      display: flex;
+      justify-content: space-between;
+      margin: 30px auto;
+      padding-left: 65px;
+      width: 250px;
+    }
+    .page-number {
+      font-family: "Raleway", sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+      font-weight: bolder;
+      justify-content: center;
+      margin-right: 10px;
+      border-radius: 3px;
+      width: 200px;
+      height: 40px;
+      border-radius: 6px;
+    }
+    .load{
+      margin-left: 100px;
+      margin-top: 50px;
+      font-family: "Raleway", sans-serif;
+      font-size: 20px;
+    }
+  }
+  

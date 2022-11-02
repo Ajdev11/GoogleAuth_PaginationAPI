@@ -1,12 +1,7 @@
 import React from "react";
 import { Aj, bg, ele } from "./Images";
 import { Link } from "react-router-dom";
-import {
-  signInWithRedirect,
-  auth,
-  provider,
-} from "../config";
-
+import { signInWithRedirect, auth, provider } from "../config";
 
 function Home() {
   const signIn = (event) => {
