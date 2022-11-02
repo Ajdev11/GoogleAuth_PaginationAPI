@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Pagination from "./Pagination";
 
+
 function Display() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);

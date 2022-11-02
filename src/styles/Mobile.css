@@ -21,10 +21,11 @@
     display: grid;
     justify-content: center;
   }
-  .users-img {
+  span {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+    list-style: none;
   }
   #users {
     border-radius: 8px;
@@ -54,7 +55,7 @@
     font-size: 20px;
     text-align: center;
   }
-  #Link{
+  #Link {
     text-decoration: none;
     color: #fff;
     font-weight: bolder;
