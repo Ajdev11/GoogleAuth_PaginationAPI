@@ -1,6 +1,4 @@
-import React from 'react';
-import "./styles/ErrorTest.css";
-
+import React from 'react'
 
 function ErrorFallback({ error, resetErrorBoundary }) {
   return (

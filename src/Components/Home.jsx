@@ -3,24 +3,25 @@ import { Aj, bg, ele } from "./Images";
 import { Link } from "react-router-dom";
 import { signInWithRedirect, auth, provider } from "../config";
 import "../styles/Mobile.css";
+import {Helmet} from "react-helmet-async"
 
 function Home() {
   const UsersImage = [
     {
       id: 1,
-      Title: <img id="users" src={Aj} alt="" />,
+      Title: <img id="users" src={Aj} alt="User1" />,
     },
     {
       id: 1,
-      Title: <img id="users" src={bg} alt="" />,
+      Title: <img id="users" src={bg} alt="user2" />,
     },
     {
       id: 1,
-      Title: <img id="users" src={ele} alt="" />,
+      Title: <img id="users" src={ele} alt="User3" />,
     },
     {
       id: 1,
-      Title: <img id="users" src={bg} alt="" />,
+      Title: <img id="users" src={bg} alt="User4" />,
     },
   ];
   const listUsers = UsersImage.map((img) => <li key={img.id}>{img.Title}</li>);
@@ -32,9 +33,14 @@ function Home() {
 
   return (
     <div className="page">
+       <Helmet>
+        <title>AltSchool</title>
+        <meta name="description" content="AltSchool second semester Exam" />
+        <link rel="canonical" href="/" />
+       </Helmet>
       <main>
         <h1 className="h1">
-          Join AltSchool Africa <br />{" "}
+          Join AltSchool Africa <br />
           <span className="spanOne">On Discord</span>{" "}
         </h1>
         <div className="users-img">
@@ -42,15 +48,11 @@ function Home() {
         </div>
         <p>Setemi and 8 others have joined this workspace</p>
         <div className="btn">
-          <button onClick={signIn}>
-            <Link id="Link" to="/">
-              Sign in With Google
-            </Link>
-          </button>
+          <button onClick={signIn}>Sign in With Google</button>
           <h6>Or</h6>
           <button>
             <Link id="Link" to="/display">
-              Sign in With Email
+              Check Pagination
             </Link>
           </button>
         </div>

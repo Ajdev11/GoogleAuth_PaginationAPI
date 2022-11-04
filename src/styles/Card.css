@@ -1,22 +1,39 @@
 @media (min-width: 280px) and (max-width: 1440px) {
     @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+    .card-section{
+      display: grid;
+      justify-content: center;
+    }
+    .link{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .link-home{
+      text-decoration: none;
+      color: black;
+      font-size: 22px;
+      font-variant: small-caps;
+    }
     .card-container {
       font-family: "Raleway", sans-serif;
-      background-color: rgb(51, 50, 50);
+      background-color: black;
       border: 1px solid #7f7f7f7f;
-      width: 270px;
-      height: 330px;
-      margin-left: 45px;
-      margin-top: 50px;
+      width: 300px;
+      height: 380px;
+      margin-top: 30px;
       text-align: center;
       border-radius: 5px;
-      overflow: hidden;
+    }
+    .image-container{
+      display: grid;
+      justify-content: center;
     }
     .image-container img {
-      margin-top: 20px;
+      margin-top: 40px;
       overflow: hidden;
-      height: 130px;
-      width: 130px;
+      height: 90px;
+      width: 90px;
       border-radius: 130px;
       object-fit: cover;
     }
@@ -27,8 +44,8 @@
     .title{
       font-family: "Raleway", sans-serif;
       font-size: 15px;
-      color: #fff;
-      margin-top: 10px;
+      color: black;
+      margin-top: 5px;
     }
     .text p {
       font-family: "Raleway", sans-serif;
@@ -40,6 +57,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 40px;
     }
     .card-container a:link {
       text-decoration: none;
@@ -48,11 +66,7 @@
     .custom-btn {
       text-align: center;
       font-size: 15px;
-      border-radius: 5px;
-      border: none;
-      background-color: black;
       color: white;
-      cursor: pointer;
       margin: 1rem 0.5rem;
       padding: 0.8em 0;
       transition: all 0.1s ease-in-out;

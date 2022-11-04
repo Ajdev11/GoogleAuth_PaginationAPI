@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Pagination from "./Pagination";
+import {Helmet} from "react-helmet-async"
 
 
 function Display() {
@@ -27,6 +28,11 @@ function Display() {
   }, []);
   return (
     <>
+     <Helmet>
+        <title>AltSchool</title>
+        <meta name="description" content="AltSchool second semester Exam" />
+        <link rel="canonical" href="/" />
+       </Helmet>
       <div
         style={{
           width: "100%",

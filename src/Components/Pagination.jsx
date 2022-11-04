@@ -1,5 +1,7 @@
 import React from "react";
-import "../styles/Pagination.css"
+import "../styles/Pagination.css";
+import {Helmet} from "react-helmet-async"
+
 
 function Pagination({ UsersPerPage, totalUsers, currentPage, setCurrentPage }) {
   const pageNumbers = [];
@@ -12,23 +14,28 @@ function Pagination({ UsersPerPage, totalUsers, currentPage, setCurrentPage }) {
     pageNumbers.push(pageNumber);
   }
   return (
-    <nav className="page-numbers">
-      {pageNumbers.map((pageNumber) => (
-        <span
-          key={pageNumber}
-          onClick={() => {
-            setCurrentPage(pageNumber);
-          }}
-          className="page-number"
-          style={{
-            color: currentPage === pageNumber ? "white" : "white",
-            backgroundColor: currentPage === pageNumber ? "black" : "black",
-          }}
-        >
-          {pageNumber}
-        </span>
-      ))}
-    </nav>
+      <nav className="page-numbers">
+         <Helmet>
+        <title>AltSchool</title>
+        <meta name="description" content="AltSchool second semester Exam" />
+        <link rel="canonical" href="/" />
+       </Helmet>
+        {pageNumbers.map((pageNumber) => (
+          <span
+            key={pageNumber}
+            onClick={() => {
+              setCurrentPage(pageNumber);
+            }}
+            className="page-number"
+            style={{
+              color: currentPage === pageNumber ? "white" : "white",
+              backgroundColor: currentPage === pageNumber ? "black" : "black",
+            }}
+          >
+            {pageNumber}
+          </span>
+        ))}
+      </nav>
   );
 }
 
