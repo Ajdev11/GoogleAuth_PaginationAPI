@@ -3,7 +3,7 @@ import { Aj, bg, ele } from "./Images";
 import { Link } from "react-router-dom";
 import { signInWithRedirect, auth, provider } from "../config";
 import "../styles/Mobile.css";
-import {Helmet} from "react-helmet-async"
+import { Helmet } from "react-helmet-async";
 
 function Home() {
   const UsersImage = [
@@ -33,11 +33,11 @@ function Home() {
 
   return (
     <div className="page">
-       <Helmet>
+      <Helmet>
         <title>AltSchool</title>
         <meta name="description" content="AltSchool second semester Exam" />
         <link rel="canonical" href="/" />
-       </Helmet>
+      </Helmet>
       <main>
         <h1 className="h1">
           Join AltSchool Africa <br />
@@ -53,6 +53,12 @@ function Home() {
           <button>
             <Link id="Link" to="/display">
               Check Pagination
+            </Link>
+          </button>{" "}
+          <br />
+          <button>
+            <Link id="Link" to="/error">
+              Check ErrorPage
             </Link>
           </button>
         </div>
