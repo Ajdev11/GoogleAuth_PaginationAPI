@@ -2,10 +2,10 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Display from "./Components/Display";
-//import { ErrorBoundary } from "react-error-boundary";
-//import ErrorFallback from "./Components/ErrorBoundary";
 import ErrorHandling from "./Components/ErrorBoundary";
 import Hero from "./Components/Hero";
+
+
 function App() {
   return (
     <>

@@ -28,8 +28,8 @@ function Pagination({ UsersPerPage, totalUsers, currentPage, setCurrentPage }) {
             }}
             className="page-number"
             style={{
-              color: currentPage === pageNumber ? "white" : "white",
-              backgroundColor: currentPage === pageNumber ? "black" : "black",
+              color: currentPage === pageNumber ? "white" : "",
+              backgroundColor: currentPage === pageNumber ? "black" : "",
             }}
           >
             {pageNumber}
