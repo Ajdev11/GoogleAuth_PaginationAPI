@@ -19,7 +19,7 @@ class ErrorHandling extends Component {
   }
   render() {
     if (this.state.hasError) {
-      return <h1>Fetching Error!! wait a Sec..</h1>;
+      return <h1 className="Error">Please Refresh Page..</h1>;
     }
     return this.props.children;
   }

@@ -71,4 +71,7 @@
     font-family: monospace;
     font-size: 18px;
   }
+  .Error{
+    margin: 50px;
+  }
 }
