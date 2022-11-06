@@ -4,8 +4,6 @@ import { Link } from "react-router-dom";
 import { signInWithRedirect, auth, provider } from "../config";
 import "../styles/Mobile.css";
 import { Helmet } from "react-helmet-async";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   const UsersImage = [
@@ -51,7 +49,6 @@ function Home() {
         <p>Setemi and 8 others have joined this workspace</p>
         <div className="btn">
           <button onClick={signIn}>
-            <FontAwesomeIcon icon={faEnvelope} />
             Sign in With Google
           </button>
           <h6>Or</h6>

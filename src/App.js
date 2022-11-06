@@ -2,9 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Display from "./Components/Display";
-import ErrorHandling from "./Components/ErrorBoundary";
+import ErrorBoundary from "./Components/ErrorBoundary";
 import Hero from "./Components/Hero";
-
 
 function App() {
   return (
@@ -13,11 +12,12 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/display" element={<Display />} />
       </Routes>
-      <ErrorHandling>
+
+      <ErrorBoundary>
         <Routes>
           <Route exact path="/error" element={<Hero name="Moses" />} />
         </Routes>
-      </ErrorHandling>
+      </ErrorBoundary>
     </>
   );
 }

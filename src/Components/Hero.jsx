@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Hero(props) {
-    if(props.name ==="Moses"){
-        throw new Error('')
+function Hero({name}) {
+    if(name ==="Moses"){
+        throw new Error('Error In Your Codes')
     }
     return ( 
-      <h1>{props.name}</h1>
+      <h1>{name}</h1>
      );
 }
 
