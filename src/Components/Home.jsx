@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { signInWithRedirect, auth, provider } from "../config";
 import "../styles/Mobile.css";
 import { Helmet } from "react-helmet-async";
+import { Google, Person } from "react-bootstrap-icons";
+import Aboutme from "./Aboutme";
+
+
+
 
 function Home() {
   const UsersImage = [
@@ -33,12 +38,44 @@ function Home() {
 
   return (
     <div className="page">
+       {/* SEO CONTENTS USING HELMETS */}
       <Helmet>
         <title>AltSchool</title>
         <meta name="description" content="AltSchool second semester Exam" />
         <link rel="canonical" href="/" />
       </Helmet>
-      <main>
+       {/* NAVBAR */}
+      <navbar className="navbar navbar-expand-lg bg-dark navbar-dark py-1">
+        <div className="container">
+          <span className="navbar-brand text-success fw-bold mt-2">
+            AltSchool Exam
+          </span>
+          <button
+            className="navbar-toggler shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <div className="navbar-toggler-icon"></div>
+          </button>
+          <div className="collapse navbar-collapse" id="navmenu">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link to="AboutAltschool" className="nav-link">
+                  About Altschool
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="Aboutme" className="nav-link">
+                  About Me
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </navbar>
+      {/* MAIN PAGE CONTAINING CONTENTS */}
+      <main className="container-fluid">
         <h1 className="h1">
           Join AltSchool Africa <br />
           <span className="spanOne">On Discord</span>{" "}
@@ -48,17 +85,19 @@ function Home() {
         </div>
         <p>Setemi and 8 others have joined this workspace</p>
         <div className="btn">
-          <button onClick={signIn}>
+          <button onClick={signIn} id="btn">
+            <Google color="blue" size={16} />
             Sign in With Google
           </button>
           <h6>Or</h6>
-          <button>
+          <button id="btn">
+            <Person color="blue" size={16} />
             <Link id="Link" to="/display">
               Check Pagination
             </Link>
           </button>{" "}
           <br />
-          <button>
+          <button id="btn">
             <Link id="Link" to="/error">
               Check ErrorPage
             </Link>

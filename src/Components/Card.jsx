@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Card.css";
+// import "../styles/Card.css";
 import { Link } from "react-router-dom";
 import {Helmet} from "react-helmet-async"
 
