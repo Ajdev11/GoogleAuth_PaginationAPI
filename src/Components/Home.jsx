@@ -5,9 +5,6 @@ import { signInWithRedirect, auth, provider } from "../config";
 import "../styles/Mobile.css";
 import { Helmet } from "react-helmet-async";
 import { Google, Person } from "react-bootstrap-icons";
-import Aboutme from "./Aboutme";
-
-
 
 
 function Home() {
@@ -38,13 +35,13 @@ function Home() {
 
   return (
     <div className="page">
-       {/* SEO CONTENTS USING HELMETS */}
+      {/* SEO CONTENTS USING HELMETS */}
       <Helmet>
         <title>AltSchool</title>
         <meta name="description" content="AltSchool second semester Exam" />
         <link rel="canonical" href="/" />
       </Helmet>
-       {/* NAVBAR */}
+      {/* NAVBAR */}
       <navbar className="navbar navbar-expand-lg bg-dark navbar-dark py-1">
         <div className="container">
           <span className="navbar-brand text-success fw-bold mt-2">
@@ -61,13 +58,8 @@ function Home() {
           <div className="collapse navbar-collapse" id="navmenu">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link to="AboutAltschool" className="nav-link">
-                  About Altschool
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link to="Aboutme" className="nav-link">
-                  About Me
+                  CheckOut My Altschool Projects
                 </Link>
               </li>
             </ul>
@@ -76,26 +68,30 @@ function Home() {
       </navbar>
       {/* MAIN PAGE CONTAINING CONTENTS */}
       <main className="container-fluid">
-        <h1 className="h1">
-          Join AltSchool Africa <br />
-          <span className="spanOne">On Discord</span>{" "}
+        <h1 className="h1 mt-4">
+          Join AltSchool Africa
+          <span className="spanOne text-secondary">On Discord</span>{" "}
         </h1>
         <div className="users-img">
           <span>{listUsers}</span>
         </div>
-        <p>Setemi and 8 others have joined this workspace</p>
+        <p className="text-center text-info fs-4">
+          Setemi and 8 others have joined this workspace
+        </p>
         <div className="btn">
           <button onClick={signIn} id="btn">
-            <Google color="blue" size={16} />
+            <Google color="yellow" size={16} />
             Sign in With Google
           </button>
-          <h6>Or</h6>
+          <br />
+          <br />
           <button id="btn">
             <Person color="blue" size={16} />
             <Link id="Link" to="/display">
               Check Pagination
             </Link>
           </button>{" "}
+          <br />
           <br />
           <button id="btn">
             <Link id="Link" to="/error">

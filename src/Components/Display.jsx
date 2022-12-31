@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Card from "./Card";
 import Pagination from "./Pagination";
 import {Helmet} from "react-helmet-async"
+import { Link } from "react-router-dom";
 
 
 function Display() {
@@ -33,6 +34,31 @@ function Display() {
         <meta name="description" content="AltSchool second semester Exam" />
         <link rel="canonical" href="/" />
        </Helmet>
+     {/* NAVBAR */}
+     <navbar className="navbar navbar-expand-lg bg-dark navbar-dark py-1">
+        <div className="container">
+          <span className="navbar-brand text-success fw-bold mt-2">
+            AltSchool Exam
+          </span>
+          <button
+            className="navbar-toggler shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <div className="navbar-toggler-icon"></div>
+          </button>
+          <div className="collapse navbar-collapse" id="navmenu">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  Back Home
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </navbar>
       <div
         style={{
           width: "100%",
