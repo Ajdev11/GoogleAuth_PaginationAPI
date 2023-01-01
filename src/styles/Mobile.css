@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 * {
   margin: 0px;
   padding: 0px;
@@ -7,6 +8,7 @@ main {
   display: grid;
   justify-content: center;
   font-family: "Raleway", sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   background-color: rgb(22, 21, 21);
   width: 100%;
   height: 100vh;
@@ -49,7 +51,11 @@ span {
   background-color: rgb(22, 21, 21);
   color: #fff;
   font-weight: bolder;
-  font-family: monospace;
+  /* font-family: monospace; */
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  font-family: "Raleway", sans-serif; 
 }
 h6 {
   color: #fff;

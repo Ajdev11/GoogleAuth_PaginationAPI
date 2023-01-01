@@ -42,7 +42,7 @@ function Home() {
         <link rel="canonical" href="/" />
       </Helmet>
       {/* NAVBAR */}
-      <navbar className="navbar navbar-expand-lg bg-dark navbar-dark py-1">
+      <navbar className="navbar navbar-expand-lg sticky-top bg-dark navbar-dark py-1">
         <div className="container">
           <span className="navbar-brand text-success fw-bold mt-2">
             AltSchool Exam
@@ -85,8 +85,8 @@ function Home() {
             Sign in With Google
           </button>
           <button id="btn">
-         firebase deployed
             <Link id="Link" to="/display">
+            <Person color="yellow" size={16} />
               Check Pagination
             </Link>
           </button>

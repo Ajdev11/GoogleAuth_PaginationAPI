@@ -5,7 +5,7 @@ function Aboutme() {
   return (
     <>
       {/* NAVBAR */}
-      <navbar className="navbar navbar-expand-lg bg-dark navbar-dark py-1">
+      <navbar className="navbar navbar-expand-lg sticky-top bg-dark navbar-dark py-1">
         <div className="container">
           <span className="navbar-brand text-success fw-bold mt-2">
             AltSchool Exam
@@ -40,7 +40,7 @@ function Aboutme() {
                     This Project houses my Portfolio Page showing Frontend
                     related works outside the Altschool Curriculum. Built with
                     React, styled with Bootstrap & Custom CSS, all codes was
-                    documented and pusheed to my Github account using GIT CLI,
+                    documented and pushed to my Github account using GIT CLI,
                     deployed and hosted with Firebase Application.
                   </p>
                   <div className="btn-div">
@@ -61,7 +61,7 @@ function Aboutme() {
             <div className="col-md my-5">
               <div className="card bg-light text-dark">
                 <div className="card-body text-center">
-                  <h3 className="card-title mb-3">CALCULATOR </h3>
+                  <h3 className="card-title mb-3">REACT CALCULATOR </h3>
                   <p className="card-text">
                     This Project houses my Assignment for Second semester of the
                     Altschool Curricular. Built with React, styled with Custom
@@ -86,7 +86,7 @@ function Aboutme() {
             <div className="col-md my-5">
               <div className="card bg-light text-dark">
                 <div className="card-body text-center">
-                  <h3 className="card-title mb-3">PAGINATION</h3>
+                  <h3 className="card-title mb-3">REACT PAGINATION</h3>
                   <p className="card-text">
                     This Project houses my Assignment/Project for Second
                     semester of the Altschool Curricular. Built with React,
