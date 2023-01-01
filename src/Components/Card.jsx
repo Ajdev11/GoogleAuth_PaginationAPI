@@ -11,14 +11,6 @@ const Card = ({ data }) => {
         <meta name="description" content="AltSchool second semester Exam" />
         <link rel="canonical" href="/" />
        </Helmet>
-      <div className="link">
-        <Link className="link-home" to="/">
-          Home
-        </Link>
-        <Link className="link-home" to="/">
-          Next
-        </Link>
-      </div>
       <div className="card-container">
         <div className="image-container">
           <img alt="Profile Pic" src={data.picture.medium} />

@@ -5,10 +5,12 @@ import Aboutme from "./Components/Aboutme";
 import Display from "./Components/Display";
 import ErrorBoundary from "./Components/ErrorBoundary";
 import Hero from "./Components/Hero";
+// import Axios from "./Components/Axios";
 
 function App() {
   return (
     <>
+    {/* <Axios /> */}
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/Aboutme" element={<Aboutme />} />

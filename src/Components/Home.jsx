@@ -72,6 +72,7 @@ function Home() {
           Join AltSchool Africa
           <span className="spanOne text-secondary">On Discord</span>{" "}
         </h1>
+        <br />
         <div className="users-img">
           <span>{listUsers}</span>
         </div>
@@ -83,16 +84,12 @@ function Home() {
             <Google color="yellow" size={16} />
             Sign in With Google
           </button>
-          <br />
-          <br />
           <button id="btn">
-            <Person color="blue" size={16} />
+         firebase deployed
             <Link id="Link" to="/display">
               Check Pagination
             </Link>
-          </button>{" "}
-          <br />
-          <br />
+          </button>
           <button id="btn">
             <Link id="Link" to="/error">
               Check ErrorPage

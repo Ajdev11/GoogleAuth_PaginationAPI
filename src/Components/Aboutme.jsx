@@ -43,15 +43,18 @@ function Aboutme() {
                     documented and pusheed to my Github account using GIT CLI,
                     deployed and hosted with Firebase Application.
                   </p>
+                  <div className="btn-div">
                   <button className="btn btn-primary mt-1">
                     <a
                       id="Link"
                       target="_blank"
                       href="https://olasenimoses-55e72.web.app"
                     >
-                      View
+                      View more
                     </a>
                   </button>
+                  </div>
+
                 </div>
               </div>
             </div>
@@ -66,6 +69,7 @@ function Aboutme() {
                     GIT CLI. account, deployed and hosted with Firebase
                     Application.
                   </p>
+                  <div className="btn-div">
                   <button className="btn btn-primary mt-1">
                     <a
                       id="Link"
@@ -75,7 +79,8 @@ function Aboutme() {
                       View
                     </a>
                   </button>
-                </div>
+                  </div>
+                  </div>
               </div>
             </div>
             <div className="col-md my-5">
@@ -89,6 +94,7 @@ function Aboutme() {
                     to my Github account using GIT CLI, deployed and hosted with
                     Firebase Application.
                   </p>
+                  <div className="btn-div">
                   <button className="btn btn-primary mt-1">
                     <a
                       id="Link"
@@ -98,6 +104,7 @@ function Aboutme() {
                       View
                     </a>
                   </button>
+                  </div>  
                 </div>
               </div>
             </div>
